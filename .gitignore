@@ -1,0 +1,15 @@
+/Src/.vs
+/Src/src/MyCms.Application/obj
+/Src/src/MyCms.Application/bin
+/Src/src/MyCms.Core/obj
+/Src/src/MyCms.Core/bin
+/Src/src/MyCms.EntityFrameworkCore/obj
+/Src/src/MyCms.EntityFrameworkCore/bin
+/Src/src/MyCms.Migrator/obj
+/Src/src/MyCms.Migrator/bin
+/Src/src/MyCms.Web.Host/bin
+/Src/src/MyCms.Web.Core/obj
+/Src/src/MyCms.Web.Core/bin
+/Src/src/MyCms.Web.Host/obj
+/Src/src/MyCms.Web.Host/App_Data
+/Src/test/MyCms.Tests/obj
