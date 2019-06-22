@@ -50,9 +50,15 @@ namespace MyCms.Web.Host.MiddleWare
             finally
             {
                 var statusCode = context.Response.StatusCode;
-                if (statusCode == 404 || statusCode == 500)
+                if (statusCode == 500)
                 {
                     await ErrorPage.ResponseAsync(context.Response, statusCode);
+                }
+                if (statusCode == 404)
+                {
+                    string path = context.Request.Path;
+                    context.Request.Path = "/api/gateway";
+                    await _next(context);
                 }
             }
         }
