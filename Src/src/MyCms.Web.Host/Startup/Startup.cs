@@ -18,6 +18,7 @@ using MyCms.Identity;
 using Abp.AspNetCore.SignalR.Hubs;
 using System.IO;
 using MyCms.Web.Host.MiddleWare;
+using XFramework.Core.Abstractions.Logger;
 
 namespace MyCms.Web.Host.Startup
 {
@@ -27,9 +28,10 @@ namespace MyCms.Web.Host.Startup
 
         private readonly IConfigurationRoot _appConfiguration;
 
-        public Startup(IHostingEnvironment env)
+        public Startup(IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             _appConfiguration = env.GetAppConfiguration();
+            loggerFactory.AddXLog();
         }
 
         public IServiceProvider ConfigureServices(IServiceCollection services)

@@ -30,7 +30,7 @@ namespace MyCms.Controllers
             return UTF8Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(request, Formatting.None));
         }
     }
-    public class GatewayController: Controller
+    public class GatewayController: MyCmsControllerBase
     {
         /// <summary>
         ///  默认使用Json序列化器
@@ -41,6 +41,10 @@ namespace MyCms.Controllers
 
         private const int DEFAULT_TIMEOUT_IN_MS = 35000;
 
+        public GatewayController()
+        {
+
+        }
         /// <summary>
         /// Soa自动寻址
         /// </summary>

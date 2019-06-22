@@ -57,7 +57,10 @@ namespace MyCms.Web.Host.MiddleWare
                 if (statusCode == 404)
                 {
                     string path = context.Request.Path;
-                    context.Request.Path = "/api/gateway";
+                    context.Request.Path = "/api/gateway" + path;
+
+                    //QueryString q = new QueryString();
+                    //context.Request.QueryString = q;
                     await _next(context);
                 }
             }

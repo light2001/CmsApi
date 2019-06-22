@@ -1,0 +1,5 @@
+[2019-06-22 20:14:52 084] [Infor] 000005 Fetch configuration, file : 0, version : soa.chapter.properties
+[2019-06-22 20:14:52 322] [Infor] 000005 Fetch configuration file successfully, new version : 20
+[2019-06-22 20:14:52 329] [Infor] 000022 Fetch configuration, file : 20, version : soa.chapter.properties
+[2019-06-22 20:15:22 366] [Infor] 000022 Configuration file has not been changed
+[2019-06-22 20:15:22 419] [Infor] 000022 Fetch configuration, file : 20, version : soa.chapter.properties
