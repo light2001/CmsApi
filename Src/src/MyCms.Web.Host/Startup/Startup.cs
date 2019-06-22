@@ -17,6 +17,7 @@ using MyCms.Identity;
 
 using Abp.AspNetCore.SignalR.Hubs;
 using System.IO;
+using MyCms.Web.Host.MiddleWare;
 
 namespace MyCms.Web.Host.Startup
 {
@@ -106,6 +107,8 @@ namespace MyCms.Web.Host.Startup
             {
                 routes.MapHub<AbpCommonHub>("/signalr");
             });
+
+            app.UseCustomErrorPages();
 
             app.UseMvc(routes =>
             {
