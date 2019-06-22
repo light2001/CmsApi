@@ -18,6 +18,9 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DocumentationFile>bin\Debug\netcoreapp2.1\MyCms.Web.Core.xml</DocumentationFile>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netcoreapp2.1\MyCms.Web.Core.xml</DocumentationFile>
+  </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\MyCms.Application\MyCms.Application.csproj" />
     <ProjectReference Include="..\MyCms.EntityFrameworkCore\MyCms.EntityFrameworkCore.csproj" />
