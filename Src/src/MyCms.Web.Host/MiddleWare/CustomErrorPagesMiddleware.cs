@@ -58,7 +58,7 @@ namespace MyCms.Web.Host.MiddleWare
                 {
                     string path = context.Request.Path;
                     context.Request.Path = "/api/gateway" + path;
-                    context.Response.StatusCode=302;
+                    context.Response.StatusCode=200;
 
                     //QueryString q = new QueryString();
                     //context.Request.QueryString = q;
